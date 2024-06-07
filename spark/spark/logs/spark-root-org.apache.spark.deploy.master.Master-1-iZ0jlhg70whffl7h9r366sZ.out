@@ -128,3 +128,4 @@ java.lang.IllegalArgumentException: Too large frame: 5135603447292250188
 24/06/06 20:03:37 INFO Master: iZ0jlhg70whffl7h9r366sZ:45515 got disassociated, removing it.
 24/06/06 20:03:37 WARN Master: Got status update for unknown executor app-20240606200251-0001/0
 24/06/06 20:51:20 INFO Master: 127.0.0.1:44244 got disassociated, removing it.
+24/06/07 23:15:27 ERROR Master: RECEIVED SIGNAL TERM
