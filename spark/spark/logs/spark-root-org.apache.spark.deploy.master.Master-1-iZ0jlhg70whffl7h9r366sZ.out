@@ -1,0 +1,130 @@
+Spark Command: /usr/lib/jvm/java-17-openjdk-amd64/bin/java -cp /root/star/learn_project/spark/spark/conf/:/root/star/learn_project/spark/spark/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host localhost --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+24/06/06 17:59:01 INFO Master: Started daemon with process name: 14129@iZ0jlhg70whffl7h9r366sZ
+24/06/06 17:59:01 INFO SignalUtils: Registering signal handler for TERM
+24/06/06 17:59:01 INFO SignalUtils: Registering signal handler for HUP
+24/06/06 17:59:01 INFO SignalUtils: Registering signal handler for INT
+24/06/06 17:59:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/06/06 17:59:02 INFO SecurityManager: Changing view acls to: root
+24/06/06 17:59:02 INFO SecurityManager: Changing modify acls to: root
+24/06/06 17:59:02 INFO SecurityManager: Changing view acls groups to: 
+24/06/06 17:59:02 INFO SecurityManager: Changing modify acls groups to: 
+24/06/06 17:59:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root; groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY
+24/06/06 17:59:02 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+24/06/06 17:59:02 INFO Master: Starting Spark master at spark://localhost:7077
+24/06/06 17:59:02 INFO Master: Running Spark version 3.5.1
+24/06/06 17:59:02 INFO JettyUtils: Start Jetty 0.0.0.0:8080 for MasterUI
+24/06/06 17:59:02 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+24/06/06 17:59:02 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://iZ0jlhg70whffl7h9r366sZ:8080
+24/06/06 17:59:02 INFO Master: I have been elected leader! New state: ALIVE
+24/06/06 17:59:17 INFO Master: Registering worker 172.19.162.152:46117 with 4 cores, 14.0 GiB RAM
+24/06/06 17:59:29 WARN TransportChannelHandler: Exception in connection from /127.0.0.1:44198
+java.lang.IllegalArgumentException: Too large frame: 5135603447292250188
+	at org.sparkproject.guava.base.Preconditions.checkArgument(Preconditions.java:119)
+	at org.apache.spark.network.util.TransportFrameDecoder.decodeNext(TransportFrameDecoder.java:148)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:98)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/06/06 17:59:29 INFO Master: 127.0.0.1:44198 got disassociated, removing it.
+24/06/06 17:59:31 WARN TransportChannelHandler: Exception in connection from /127.0.0.1:44206
+java.lang.IllegalArgumentException: Too large frame: 5135603447292250188
+	at org.sparkproject.guava.base.Preconditions.checkArgument(Preconditions.java:119)
+	at org.apache.spark.network.util.TransportFrameDecoder.decodeNext(TransportFrameDecoder.java:148)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:98)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/06/06 17:59:31 INFO Master: 127.0.0.1:44206 got disassociated, removing it.
+24/06/06 17:59:31 WARN TransportChannelHandler: Exception in connection from /127.0.0.1:44218
+java.lang.IllegalArgumentException: Too large frame: 5135603447292250188
+	at org.sparkproject.guava.base.Preconditions.checkArgument(Preconditions.java:119)
+	at org.apache.spark.network.util.TransportFrameDecoder.decodeNext(TransportFrameDecoder.java:148)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:98)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/06/06 17:59:31 INFO Master: 127.0.0.1:44218 got disassociated, removing it.
+24/06/06 17:59:31 WARN TransportChannelHandler: Exception in connection from /127.0.0.1:44234
+java.lang.IllegalArgumentException: Too large frame: 5135603447292250188
+	at org.sparkproject.guava.base.Preconditions.checkArgument(Preconditions.java:119)
+	at org.apache.spark.network.util.TransportFrameDecoder.decodeNext(TransportFrameDecoder.java:148)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:98)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/06/06 17:59:31 INFO Master: 127.0.0.1:44234 got disassociated, removing it.
+24/06/06 18:00:23 INFO Master: Registering app Spark shell
+24/06/06 18:00:23 INFO Master: Registered app Spark shell with ID app-20240606180023-0000
+24/06/06 18:00:23 INFO Master: Start scheduling for app app-20240606180023-0000 with rpId: 0
+24/06/06 18:00:23 INFO Master: Launching executor app-20240606180023-0000/0 on worker worker-20240606175916-172.19.162.152-46117
+24/06/06 18:00:23 INFO Master: Start scheduling for app app-20240606180023-0000 with rpId: 0
+24/06/06 18:14:44 INFO Master: Received unregister request from application app-20240606180023-0000
+24/06/06 18:14:44 INFO Master: Removing app app-20240606180023-0000
+24/06/06 18:14:44 INFO Master: 127.0.0.1:37524 got disassociated, removing it.
+24/06/06 18:14:44 INFO Master: iZ0jlhg70whffl7h9r366sZ:40275 got disassociated, removing it.
+24/06/06 18:14:44 WARN Master: Got status update for unknown executor app-20240606180023-0000/0
+24/06/06 20:02:51 INFO Master: Registering app Spark shell
+24/06/06 20:02:51 INFO Master: Registered app Spark shell with ID app-20240606200251-0001
+24/06/06 20:02:51 INFO Master: Start scheduling for app app-20240606200251-0001 with rpId: 0
+24/06/06 20:02:51 INFO Master: Launching executor app-20240606200251-0001/0 on worker worker-20240606175916-172.19.162.152-46117
+24/06/06 20:02:51 INFO Master: Start scheduling for app app-20240606200251-0001 with rpId: 0
+24/06/06 20:03:36 INFO Master: Received unregister request from application app-20240606200251-0001
+24/06/06 20:03:36 INFO Master: Removing app app-20240606200251-0001
+24/06/06 20:03:37 INFO Master: 127.0.0.1:45122 got disassociated, removing it.
+24/06/06 20:03:37 INFO Master: iZ0jlhg70whffl7h9r366sZ:45515 got disassociated, removing it.
+24/06/06 20:03:37 WARN Master: Got status update for unknown executor app-20240606200251-0001/0
+24/06/06 20:51:20 INFO Master: 127.0.0.1:44244 got disassociated, removing it.
