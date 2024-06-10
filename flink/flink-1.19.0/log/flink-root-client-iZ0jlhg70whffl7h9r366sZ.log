@@ -1,0 +1,77 @@
+2024-06-08 22:12:48,710 INFO  org.apache.flink.client.cli.CliFrontend                      [] - --------------------------------------------------------------------------------
+2024-06-08 22:12:48,711 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  Starting Command Line Client (Version: 1.19.0, Scala: 2.12, Rev:eaffd22, Date:2024-03-06T15:18:44+01:00)
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  OS current user: root
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  Current Hadoop/Kerberos user: <no hadoop dependency found>
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  JVM: OpenJDK 64-Bit Server VM - Debian - 17/17.0.11+9-Debian-1deb12u1
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  Arch: amd64
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  Maximum heap size: 3836 MiBytes
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  JAVA_HOME: 
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  No Hadoop Dependency available
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  JVM Options:
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     -XX:+IgnoreUnrecognizedVMOptions
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-exports=java.base/sun.net.util=ALL-UNNAMED
+2024-06-08 22:12:48,712 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.lang=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.net=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.io=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.nio=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/sun.nio.ch=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+2024-06-08 22:12:48,713 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.text=ALL-UNNAMED
+2024-06-08 22:12:48,714 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.time=ALL-UNNAMED
+2024-06-08 22:12:48,714 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.util=ALL-UNNAMED
+2024-06-08 22:12:48,714 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+2024-06-08 22:12:48,714 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED
+2024-06-08 22:12:48,714 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --add-opens=java.base/java.util.concurrent.locks=ALL-UNNAMED
+2024-06-08 22:12:48,714 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     -Dlog.file=/root/star/learn_project/flink/flink-1.19.0/log/flink-root-client-iZ0jlhg70whffl7h9r366sZ.log
+2024-06-08 22:12:48,714 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     -Dlog4j.configuration=file:/root/star/learn_project/flink/flink-1.19.0/conf/log4j-cli.properties
+2024-06-08 22:12:48,714 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     -Dlog4j.configurationFile=file:/root/star/learn_project/flink/flink-1.19.0/conf/log4j-cli.properties
+2024-06-08 22:12:48,714 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     -Dlogback.configurationFile=file:/root/star/learn_project/flink/flink-1.19.0/conf/logback.xml
+2024-06-08 22:12:48,714 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  Program Arguments:
+2024-06-08 22:12:48,715 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     run
+2024-06-08 22:12:48,715 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     examples/streaming/WordCount.jar
+2024-06-08 22:12:48,715 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --input
+2024-06-08 22:12:48,715 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     ./test/wordcount.txt
+2024-06-08 22:12:48,716 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     --output
+2024-06-08 22:12:48,716 INFO  org.apache.flink.client.cli.CliFrontend                      [] -     ./test/
+2024-06-08 22:12:48,716 INFO  org.apache.flink.client.cli.CliFrontend                      [] -  Classpath: /root/star/learn_project/flink/flink-1.19.0/lib/flink-cep-1.19.0.jar:/root/star/learn_project/flink/flink-1.19.0/lib/flink-connector-files-1.19.0.jar:/root/star/learn_project/flink/flink-1.19.0/lib/flink-csv-1.19.0.jar:/root/star/learn_project/flink/flink-1.19.0/lib/flink-json-1.19.0.jar:/root/star/learn_project/flink/flink-1.19.0/lib/flink-scala_2.12-1.19.0.jar:/root/star/learn_project/flink/flink-1.19.0/lib/flink-table-api-java-uber-1.19.0.jar:/root/star/learn_project/flink/flink-1.19.0/lib/flink-table-planner-loader-1.19.0.jar:/root/star/learn_project/flink/flink-1.19.0/lib/flink-table-runtime-1.19.0.jar:/root/star/learn_project/flink/flink-1.19.0/lib/log4j-1.2-api-2.17.1.jar:/root/star/learn_project/flink/flink-1.19.0/lib/log4j-api-2.17.1.jar:/root/star/learn_project/flink/flink-1.19.0/lib/log4j-core-2.17.1.jar:/root/star/learn_project/flink/flink-1.19.0/lib/log4j-slf4j-impl-2.17.1.jar:/root/star/learn_project/flink/flink-1.19.0/lib/flink-dist-1.19.0.jar:::
+2024-06-08 22:12:48,716 INFO  org.apache.flink.client.cli.CliFrontend                      [] - --------------------------------------------------------------------------------
+2024-06-08 22:12:48,717 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Using standard YAML parser to load flink configuration file from /root/star/learn_project/flink/flink-1.19.0/conf/config.yaml.
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.memory.process.size, 1728m
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.bind-host, localhost
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.execution.failover-strategy, region
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.address, localhost
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.memory.process.size, 1600m
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.port, 6123
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: rest.bind-address, 0.0.0.0
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: rest.port, 8080
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.bind-host, localhost
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.host, localhost
+2024-06-08 22:12:48,748 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: parallelism.default, 1
+2024-06-08 22:12:48,749 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.numberOfTaskSlots, 1
+2024-06-08 22:12:48,749 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: rest.address, 0.0.0.0
+2024-06-08 22:12:48,749 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: env.java.opts.all, --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.locks=ALL-UNNAMED
+2024-06-08 22:12:48,768 INFO  org.apache.flink.client.cli.CliFrontend                      [] - Loading FallbackYarnSessionCli
+2024-06-08 22:12:48,783 INFO  org.apache.flink.core.fs.FileSystem                          [] - Hadoop is not in the classpath/dependencies. The extended set of supported File Systems via Hadoop is not available.
+2024-06-08 22:12:48,792 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-slf4j
+2024-06-08 22:12:48,796 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-datadog
+2024-06-08 22:12:48,796 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-influx
+2024-06-08 22:12:48,796 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: external-resource-gpu
+2024-06-08 22:12:48,796 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-jmx
+2024-06-08 22:12:48,796 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-statsd
+2024-06-08 22:12:48,797 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-graphite
+2024-06-08 22:12:48,797 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-prometheus
+2024-06-08 22:12:48,820 INFO  org.apache.flink.runtime.security.modules.HadoopModuleFactory [] - Cannot create Hadoop Security Module because Hadoop cannot be found in the Classpath.
+2024-06-08 22:12:48,836 INFO  org.apache.flink.runtime.security.modules.JaasModule         [] - Jaas file will be created as /tmp/jaas-6568648725744641785.conf.
+2024-06-08 22:12:48,841 INFO  org.apache.flink.runtime.security.contexts.HadoopSecurityContextFactory [] - Cannot install HadoopSecurityContext because Hadoop cannot be found in the Classpath.
+2024-06-08 22:12:48,842 INFO  org.apache.flink.client.cli.CliFrontend                      [] - Running 'run' command.
+2024-06-08 22:12:48,852 INFO  org.apache.flink.client.cli.CliFrontend                      [] - Building program from JAR file
+2024-06-08 22:12:48,858 INFO  org.apache.flink.client.ClientUtils                          [] - Starting program (detached: false)
+2024-06-08 22:12:49,265 INFO  org.apache.flink.client.program.rest.RestClusterClient       [] - Submitting job 'WordCount' (41d11de200d96e0418902fb898c5b071).
+2024-06-08 22:12:49,508 INFO  org.apache.flink.client.program.rest.RestClusterClient       [] - Successfully submitted job 'WordCount' (41d11de200d96e0418902fb898c5b071) to 'http://0.0.0.0:8080'.
