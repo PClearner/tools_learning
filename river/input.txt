@@ -1,0 +1,9 @@
+"features":{"area": 1250, "bedrooms": 4, "bathrooms": 1,}
+"features":{"area": 1700, "bedrooms": 2, "bathrooms": 2,}
+"features":{"area": 1100, "bedrooms": 3, "bathrooms": 2,}
+"features":{"area": 1900, "bedrooms": 4, "bathrooms": 3,}
+"features":{"area": 1500, "bedrooms": 3, "bathrooms": 2,}
+"features":{"area": 1350, "bedrooms": 3, "bathrooms": 1,}
+"features":{"area": 1600, "bedrooms": 4, "bathrooms": 2,}
+"features":{"area": 1400, "bedrooms": 2, "bathrooms": 2,}
+"features":{"area": 1800, "bedrooms": 4, "bathrooms": 3,}
