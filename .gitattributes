@@ -1,1 +1,2 @@
 *.jar filter=lfs diff=lfs merge=lfs -text
+river/river_env/lib/python3.11/site-packages/polars/polars.abi3.so filter=lfs diff=lfs merge=lfs -text
