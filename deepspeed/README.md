@@ -1,9 +1,9 @@
-deepspeed���Ҫ��װ���е�����Բ���������ﵽʱ���Լ���װ��
+deepspeed这个要安装的有点大，所以步骤放在这里到时候自己安装。
 pip install deepspeed torch torchvision torchaudio 
 
-ֱ������CNN_train.py�ͺ��ˣ�����ʵ��һ���򵥵�CNN����ȥѵ��MNIST��demo�����к������data��deepspeedʵ�ֲַ�ʽѵ������Ҫ��װmpi4py�Լ���Ϊ�˹�����������Ҫ��ϵͳ������
+直接运行CNN_train.py就好了，这是实现一个简单的CNN网络去训练MNIST的demo。运行后会下载data，deepspeed实现分布式训练还需要安装mpi4py以及其为了构建轮子所需要的系统依赖：
 sudo apt-get update 
 sudo apt-get install -y libopenmpi-dev python3-dev build-essential
 pip install mpi4py
 
-�Ǹ�ds_config.json�����ļ����ǻ�������һЩ����ѵ���������ݶ��ۼƲ�������������һ���Ż���֮��ģ���Ҫ˵��һ�º����������ã�zero��֪���ǲ�����ΪӲ������Ķ����������õ���cpu���ܵ���stageд1���Ͼͻ�����ʧ�ܣ�����zeroĿǰ�˽⵽��Ҳֻ�������Ż��ڴ�ģ������ֺ�С��ģ��ѵ����stage = 0ҲûɶӰ�졣fp16�ǰ븡�������ݣ����������֧���������ݽṹ����Ҳ�ص��ˣ�logging����ǿ�ҽ������һ�����ã���INFO�������־̫���ˣ�ĿǰҲû�п��ı�Ҫ��Ӱ��۸С�
+那个ds_config.json配置文件都是基本配置一些比如训练次数啊梯度累计步数啊还有配置一下优化器之类的，需要说明一下后面三个配置，zero不知道是不是因为硬件层面的东西比如我用的是cpu来跑导致stage写1以上就会运行失败，不过zero目前了解到的也只是用来优化内存的，我这种很小规模的训练就stage = 0也没啥影响。fp16是半浮点行数据，我这里好像不支持这种数据结构，我也关掉了，logging那里强烈建议和我一样配置，它INFO级别的日志太多了，目前也没有看的必要，影响观感。
